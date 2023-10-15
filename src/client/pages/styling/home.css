@@ -1,0 +1,136 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 700px;
+    position: fixed;
+    z-index: -1;
+}
+
+.splash{
+    width: 100%;
+    height: 100%;
+}
+
+.slogan{
+    padding: 0;
+    margin: 0;
+    color: ghostwhite;
+    width: 100%;
+    height: fit-content;
+    text-align: left;
+    font-size: 60px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/*
+The hero section
+*/
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    padding: 2em;
+}
+.ghost-img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+}
+.sectionz{
+    width: 75%;
+    padding: 4em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cd-img{
+    width: 10%;
+    background-color: whitesmoke;
+    padding: 2em 6em 2em 6em; 
+    border-radius: 30px;
+}
+.description{
+    width: 40%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+h1{
+    font-size: xxx-large;
+    font-weight: light;
+    color: #078f00;
+}
+
+h3{
+    color: black;
+}
+
+
+/*
+The News splash area
+*/
+
+.News-section{
+    margin-top: 100px;
+    padding: 2em;
+    background-color: #f1f1f1;
+}
+
+.news-splash{
+    width: 75%;
+    height: 450px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 60px auto 150px;
+    grid-template-areas: "o o tw tw"
+                        "o o tw tw"
+                        "o o th fi"
+                        "fo fo th fi";
+}
+
+.news{
+    opacity: 0.7;
+}
+.tile1{
+    grid-area: o;
+    background-color: #e3e3e3;
+}
+.tile2{
+    grid-area: tw;
+    background-color: #8a8888;
+}
+.tile3{
+    grid-area: th;
+    background-color: #555555;
+}
+.tile4{
+    grid-area: fo;
+    background-color: #3b3a3a;
+}
+.tile5{
+    grid-area: fi;
+    background-color: #302f2f;
+}
+
+/*
+The Footer
+*/
+
+.footer{
+    margin-top: 100px;
+    height: 200px;
+    background-color: #078f00;
+    color: white;
+
+}
